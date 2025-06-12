@@ -26,7 +26,7 @@ app.post('/perguntar', async (req, res) => {
     const response = await axios.post(
       'https://openrouter.ai/api/v1/chat/completions',
       {
-        model: 'mistralai/mistral-7b-instruct', // gratuito e rápido
+        model: 'mistralai/mistral-7b-instruct',
         messages: [
           { role: 'system', content: CONTEXTO },
           { role: 'user', content: pergunta }
